@@ -5,7 +5,7 @@ using UnityEngine;
 namespace InterceptorUIFixes
 {
     [HarmonyPatch(typeof(PLEngineerCoolantScreen), "Update")]
-    class EngineerCoolantScreen
+    class EngineerCoolantScreenPatch
     {
         static void Postfix(PLEngineerCoolantScreen __instance, List<UISprite> ___CoolantPumpBtns)
         {
